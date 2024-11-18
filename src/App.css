@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Style global de la page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Conteneur principal */
+.w-full {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-4 {
+  padding: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-white {
+  background-color: white;
+}
+
+.rounded-xl {
+  border-radius: 12px;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.border-b {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Entête de la section historique */
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Style des filtres par catégorie */
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 8px;
+}
+
+.space-x-2 {
+  gap: 8px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.text-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-gray-100 {
+  background-color: #f3f4f6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-gray-600 {
+  color: #4b5563;
+}
+
+/* Tableaux */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f9fafb;
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+td {
+  padding: 16px;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+
+/* Icônes et status */
+.w-5 {
+  width: 20px;
+}
+
+.h-5 {
+  height: 20px;
+}
+
+.text-green-500 {
+  color: #10b981;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.text-blue-500 {
+  color: #3b82f6;
+}
+
+.text-yellow-500 {
+  color: #f59e0b;
+}
+
+/* Style des badges de statut */
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* .px-2.5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.py-0.5 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+} */
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+/* Badge des agences */
+.bg-yellow-100 {
+  background-color: #fef3c7;
+}
+
+.bg-orange-100 {
+  background-color: #fdcab0;
+}
+
+.text-yellow-800 {
+  color: #8a4d00;
+}
+
+.text-orange-800 {
+  color: #9a3c00;
+}
+
+/* Ajout d'ombre à la table */
+.divide-y {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.divide-gray-200 tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Autres */
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.ml-1 {
+  margin-left: 4px;
+}
+
+.transition-colors {
+  transition: background-color 0.3s ease;
+}
+
+.text-gray-900 {
+  color: #1f2937;
 }

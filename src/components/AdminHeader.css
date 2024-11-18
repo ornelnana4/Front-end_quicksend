@@ -1,0 +1,46 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b96520;
+    color: white;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    text-decoration: underline;
+  }
+  
+  .logout {
+    margin-left: auto;
+  }
+  
+  .logout-button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
